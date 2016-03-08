@@ -1,0 +1,355 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>RLG-BI-Solutions</Database>
+    <Server>.</Server>
+    <ConnectionString>DataSource=.;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>w1LR6ymUBHZ8AbIiE/pmccBPxUg=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>RLGDWH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>PPuQHL9RovpkMrqUD2H7cUvmCEk=2/19/2016 9:37:55 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>RLG-BI-Solution</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>YC/3CUhbGCA9SLtx2cOrnFdxI1A=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Account Segment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+1JtYP2mFjuuBNAf5rIRKnQwQKE=1/26/2016 1:51:07 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Account</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>k8KlmHMzvTOuaLXDwh3nNOa5KHY=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Affiliate Segment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>E7hGfwRy8rcXUw0a0J3fv2/m7AQ=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Book</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DlGll1U5+mn72bmrSBX4KVgdqKE=2/25/2016 9:50:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Business Cluster</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>e7KmQ9NNBA5tk2RaIFLFdo+IBjs=2/2/2016 11:00:22 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Business Unit Segment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>x8j6zsGh47T9vbB6X1LAGdGF8xI=1/2/2014 8:47:33 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Campaign</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ZxNMU75FhM/2FBcrxWY3/2P/za8=1/2/2014 8:18:56 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Channel</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KT5+diu886Ucthhp639ugxbty40=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Company Segment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tMzpgGx/6PYq9PzaDaWTMnqRv5I=1/2/2014 8:19:33 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Contract Category</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tD0QzbUBstKLefVSrf/XRYmhUk0=1/2/2014 8:19:49 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Contract Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>r1JeUzsaza6l9vPPc1MiniKnS3w=1/2/2014 8:46:56 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Customer Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>K5usXj6r9hEphpqaQNlspLwewLY=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8phgUdHShrFNyXK+96cg4WaOSYM=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Department Segment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>K8+I440NgKlq/j9ME8bKaRrw8cY=1/2/2014 8:48:05 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Document Stage</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>uTBob2qDlBj7PCrBIQ/QOVQxJL0=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Future Segment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>5ZIRfdj54OKY3Mp2JyzpuFHHcZ8=1/2/2014 8:22:07 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Item Category</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sywXUcj/L8SI5tWBqygck3RQ9pY=1/2/2014 8:22:41 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Item</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>w0J7nPjqYbwx0P7eZdGsia2bLxQ=1/2/2014 8:45:11 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Lead Source</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>24YcnVRnZS3UfrxHv2KsR9ktJpM=1/2/2014 8:47:13 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim New Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SlE2h80uNx+y9q+X44qnjM4TLoU=1/2/2014 8:22:54 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Promotion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>q/aZOOpKut7Z5jOCtlINIKu2048=1/2/2014 8:45:27 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Sales Stage</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+ZhCWEfTMZvslwqlGtIGAlIJmBc=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Salesperson</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hne0RnHk+MieefkMrU1FmKlvJxM=1/26/2016 1:51:07 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Scenario</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0hds1FO0/9FV0lq8jDomBs+Casg=10/18/2013 12:53:35 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Territory</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>VXPFXVVMa+jbC6LBr/flAHVy2kY=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>G5m8MMasc3ywUieIDZ0s2ve7AHI=10/6/2013 6:28:36 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Invoice Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XWDofXtlBLpG/myjixYSGut/jCI=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Over Due Period</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oyfxO0YRqIiZ8qsXugcYXdvJhLc=1/2/2014 8:48:59 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Barter</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QAeV2AIw3vzhHQNXwM/S2670tJo=2/23/2014 9:36:36 PM2/23/2014 9:36:36 PM</TimeStamp>
+        <ID>
+          <String>Dim Project Sale</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+Ke0b7eLn7QFTYZJSJ+zwsfhu+M=1/26/2016 1:51:58 PM2/25/2014 12:16:27 PM</TimeStamp>
+        <ID>
+          <String>Dim Project Segment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GhNO1WnOW41D64hc/9hpw1Z7dPs=1/26/2016 1:51:58 PM4/16/2014 7:41:04 PM</TimeStamp>
+        <ID>
+          <String>Dim AR Transaction Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>h2sXYsTbWLwQJ8zMtnblME5wKKI=1/26/2016 1:51:07 PM6/4/2014 6:07:12 PM</TimeStamp>
+        <ID>
+          <String>Dim Lay Out PL For Management</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dQMQo2W9yzINZxH7bUeyW6Eigns=1/26/2016 1:51:07 PM8/5/2014 11:36:20 AM</TimeStamp>
+        <ID>
+          <String>Dim Business Product Group</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>g2AmJ2Y8f2DG/ERy/QprSkjS7n0=1/26/2016 1:51:07 PM10/9/2015 12:27:03 AM</TimeStamp>
+        <ID>
+          <String>Dim Scenario Year</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Q0hQ5YFOm1OsRKsQvIDz1UgYGaw=2/19/2016 9:51:21 PM2/19/2016 9:40:27 PM</TimeStamp>
+        <ID>
+          <String>Dim Lay Out PL Standard</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OXp9WdDGYh8N/02alJ440Q3e+Qs=3/2/2016 12:56:09 PM2/19/2016 9:41:28 PM</TimeStamp>
+        <ID>
+          <String>Dim Lay Out PL Contribution Margin</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>MT0bHJTOPyG438SB/EdVztogA2E=10/22/2015 1:58:33 PM10/22/2013 5:00:10 PMPa70b+dYmohSVtQfGAd1cvkOaH4=1/2/2014 9:33:56 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>RLG-BI-Solution</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>y/yxnMyg6gNuxstFA5xySDTbakE=2/19/2016 9:48:46 PM2/23/2014 9:39:51 PMsHkJ1ffrQeXZA9Yv4pEslSX+8LQ=2/23/2014 9:39:52 PM2/23/2014 9:39:51 PM</TimeStamp>
+        <ID>
+          <String>RLG-Finance</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>O3c1AeLWLeHCNNzj6Nog4AMVsy0=1/31/2016 3:30:02 PM4/29/2014 5:02:27 PMaPsGH9BotbRLZsc46zkSk+lI7kM=4/29/2014 5:08:28 PM4/29/2014 5:02:27 PM</TimeStamp>
+        <ID>
+          <String>RLG-AccountReceivable</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>1XKPEsqX7sjYCHTnEyQjQA3suQc=1/2/2014 9:11:43 AM1/2/2014 9:10:53 AM</TimeStamp>
+        <ID>
+          <String>Role</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>RzAuubZPzX6DpVtbgLIufzS2250=1/26/2016 1:48:50 PM1/26/2016 1:48:08 PM</TimeStamp>
+        <ID>
+          <String>Role 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>GlusmthdOJm+9yozTO0jtbeX11Q=3/2/2016 2:26:41 PM1/26/2016 1:48:53 PM</TimeStamp>
+        <ID>
+          <String>Role 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Role</Type>
+        <TimeStamp>8D9NGBcZbPPn88Cm73MkwB1Fh6M=1/26/2016 1:51:58 PM1/26/2016 1:49:39 PM</TimeStamp>
+        <ID>
+          <String>Role 3</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>2HCltv+/z5RE9p3XMmTMWf4ityk=1/26/2016 1:51:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+      <ID>
+        <String>RLG-BI-Solutions</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2016-03-08T06:38:35.443333Z</LastDeployed>
+</DeploymentSnapshot>

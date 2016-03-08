@@ -1,0 +1,172 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>RLGDWH</ID>
+        <ConnectionString>Provider=SQLNCLI10.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=RLGDWH</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dim Account Segment</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Account</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Affiliate Segment</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Book</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Business Cluster</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Business Unit Segment</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Campaign</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Channel</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Company Segment</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Contract Category</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Contract Type</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Customer Product</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Customer</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Department Segment</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Document Stage</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Future Segment</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Item Category</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Item</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Lead Source</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim New Customer</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Promotion</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Sales Stage</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Salesperson</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Scenario</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Territory</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Time</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Invoice Type</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Over Due Period</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Barter</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Project Sale</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Project Segment</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim AR Transaction Type</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Lay Out PL For Management</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Business Product Group</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Scenario Year</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Lay Out PL Standard</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Lay Out PL Contribution Margin</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>RLG-BI-Solution</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Sales Analysis</ID>
+            <Partitions>
+              <Partition>
+                <ID>Sales Analysis</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>RLG-Finance</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Finance Analysis</ID>
+            <Partitions>
+              <Partition>
+                <ID>Finance Analysis</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>RLG-AccountReceivable</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact AR</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact AR</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

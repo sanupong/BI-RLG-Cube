@@ -1,0 +1,242 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>11.0.3128.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>RLG-BI-Solutions.database</Name>
+    <FullPath>RLG-BI-Solutions.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>RLG-Sales.cube</Name>
+      <FullPath>RLG-Sales.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>RLG-Sales.partitions</Name>
+          <FullPath>RLG-Sales.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RLG-Finance.cube</Name>
+      <FullPath>RLG-Finance.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>RLG-Finance.partitions</Name>
+          <FullPath>RLG-Finance.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RLG-AccountReceivable.cube</Name>
+      <FullPath>RLG-AccountReceivable.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>RLG-AccountReceivable.partitions</Name>
+          <FullPath>RLG-AccountReceivable.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Account Segment.dim</Name>
+      <FullPath>Dim Account Segment.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Account.dim</Name>
+      <FullPath>Dim Account.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Affiliate Segment.dim</Name>
+      <FullPath>Dim Affiliate Segment.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Book.dim</Name>
+      <FullPath>Dim Book.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Business Cluster.dim</Name>
+      <FullPath>Dim Business Cluster.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Business Unit Segment.dim</Name>
+      <FullPath>Dim Business Unit Segment.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Campaign.dim</Name>
+      <FullPath>Dim Campaign.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Channel.dim</Name>
+      <FullPath>Dim Channel.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Company Segment.dim</Name>
+      <FullPath>Dim Company Segment.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Contract Category.dim</Name>
+      <FullPath>Dim Contract Category.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Contract Type.dim</Name>
+      <FullPath>Dim Contract Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Customer Product.dim</Name>
+      <FullPath>Dim Customer Product.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Customer.dim</Name>
+      <FullPath>Dim Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Department Segment.dim</Name>
+      <FullPath>Dim Department Segment.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Document Stage.dim</Name>
+      <FullPath>Dim Document Stage.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Future Segment.dim</Name>
+      <FullPath>Dim Future Segment.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Item Category.dim</Name>
+      <FullPath>Dim Item Category.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Item.dim</Name>
+      <FullPath>Dim Item.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Lead Source.dim</Name>
+      <FullPath>Dim Lead Source.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim New Customer.dim</Name>
+      <FullPath>Dim New Customer.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Promotion.dim</Name>
+      <FullPath>Dim Promotion.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Sales Stage.dim</Name>
+      <FullPath>Dim Sales Stage.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Salesperson.dim</Name>
+      <FullPath>Dim Salesperson.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Scenario.dim</Name>
+      <FullPath>Dim Scenario.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Territory.dim</Name>
+      <FullPath>Dim Territory.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Time.dim</Name>
+      <FullPath>Dim Time.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Invoice Type.dim</Name>
+      <FullPath>Dim Invoice Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Over Due Period.dim</Name>
+      <FullPath>Dim Over Due Period.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Barter.dim</Name>
+      <FullPath>Dim Barter.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Project Sale.dim</Name>
+      <FullPath>Dim Project Sale.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Project Segment.dim</Name>
+      <FullPath>Dim Project Segment.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim AR Transaction Type.dim</Name>
+      <FullPath>Dim AR Transaction Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Lay Out PL For Management.dim</Name>
+      <FullPath>Dim Lay Out PL For Management.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Business Product Group.dim</Name>
+      <FullPath>Dim Business Product Group.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Scenario Year.dim</Name>
+      <FullPath>Dim Scenario Year.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Lay Out PL Standard.dim</Name>
+      <FullPath>Dim Lay Out PL Standard.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Lay Out PL Contribution Margin.dim</Name>
+      <FullPath>Dim Lay Out PL Contribution Margin.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>RLGDWH.ds</Name>
+      <FullPath>RLGDWH.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>RLG-BI-Solution.dsv</Name>
+      <FullPath>RLG-BI-Solution.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Roles>
+    <ProjectItem>
+      <Name>Role.role</Name>
+      <FullPath>Role.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RLG-Management.role</Name>
+      <FullPath>RLG-Management.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RLG-Finance.role</Name>
+      <FullPath>RLG-Finance.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RLG-AR.role</Name>
+      <FullPath>RLG-AR.role</FullPath>
+    </ProjectItem>
+  </Roles>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>RLGDWH</Id>
+            <Name>RLGDWH</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI10.1;Data Source=.;Integrated Security=SSPI;Initial Catalog=RLGDWH</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>RLGDWH</Id>
+            <Name>RLGDWH</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

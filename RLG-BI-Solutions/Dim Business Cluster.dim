@@ -1,0 +1,363 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3a00ead6-c80f-4779-aecc-db9bc6982c9f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Business Cluster</ID>
+  <Name>Dim Business Cluster</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="514" scrolltop="-801" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11986" y="30771" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimBusinessCluster" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3651" height="10558" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000430e00003e290000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimBusinessCluster" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>514</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-801</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="bf33db4a-0cf6-4363-b68f-af5e573c818e">
+    <DataSourceViewID>RLG-BI-Solution</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="e74e4f72-3f08-4771-ae07-f64a8fcda92f">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission dwd:design-time-name="1cd43982-bcb1-40a2-962f-14faab4a457e">
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission dwd:design-time-name="9d5268e4-689a-403b-8d37-ac3304b18339">
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <RoleID>Role 3</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <Attributes>
+    <Attribute dwd:design-time-name="1d37c4ae-8e8c-44db-a900-f8b7a5aa1c97">
+      <ID>Business Cluster Key</ID>
+      <Name>Business Cluster Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c65b2e0-097b-4d75-9e74-a4b75b275db8">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a697470-0bf2-4e7d-adb9-5999313941bc">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>BusinessClusterKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="25eed96c-74cf-45a6-ac90-a7b68e250aa3">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2860ae21-3e58-4a56-bafe-7b97402700aa">
+          <TableID>dbo_DimBusinessCluster</TableID>
+          <ColumnID>BusinessCluster</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e9abc2d4-5aff-4ee5-87c6-8cd027dad4d6">
+          <AttributeID>Business Cluster</AttributeID>
+          <Name>Business Cluster</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8ac3eeff-e0bd-4bc7-bc3c-e41e4d5d4b8d">
+          <AttributeID>Business Group</AttributeID>
+          <Name>Business Group</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="58dee5b3-5186-4631-b2cd-07ab3313bc1f">
+          <AttributeID>Business Unit</AttributeID>
+          <Name>Business Unit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8209ac7b-6620-4acb-8009-fd018990ab9c">
+          <AttributeID>Business Line</AttributeID>
+          <Name>Business Line</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1c0b52d6-f9fe-4499-9dc2-6547f44071d7">
+          <AttributeID>BU Group</AttributeID>
+          <Name>BU Group</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="19a25125-fb8f-4111-bb05-3b26802cfe8f">
+          <AttributeID>High Level Business Unit</AttributeID>
+          <Name>High Level Business Unit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b794ef03-0851-4005-becd-524a7b9c529d">
+          <AttributeID>Center Flag</AttributeID>
+          <Name>Center Flag</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3b041c71-30c4-4000-b01f-8dccff4af348">
+          <AttributeID>BU Group Center Flag</AttributeID>
+          <Name>BU Group Center Flag</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9c7e28a0-7166-4495-a913-cc4c452f2fe2">
+          <AttributeID>Business Type</AttributeID>
+          <Name>Business Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="e723ff50-bcf8-45dc-bc57-9a35b8cd7125">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9beacbe6-5dba-4a9c-a16a-aaa9aa214f30">
+          <TableID>dbo_DimBusinessCluster</TableID>
+          <ColumnID>BusinessCluster</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="43a754bd-eb12-40dd-8cbb-667376057cf2">
+      <ID>Business Cluster</ID>
+      <Name>Business Cluster</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8c5d669b-d01e-4771-91af-badbfad409ec">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="539a8d5b-8322-4793-b208-035f725cd547">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>BusinessCluster</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7b358dfc-1360-4762-a2bd-7a5edbcf0d66">
+      <ID>Business Group</ID>
+      <Name>Business Group</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="517262a5-b0fa-4067-9e8e-f4108617a7a4">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d6c4c32-f52a-4ea3-aea4-b628192cdcf7">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>BusinessGroup</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9189b5db-7bf5-44a5-b389-f43b813031b4">
+      <ID>Business Unit</ID>
+      <Name>Business Unit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ab10b63-9113-4e79-92e7-1cad161dcd43">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eeb947e3-9694-423e-813d-4a400a33b2f5">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>BusinessUnit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="15761465-6087-434d-963f-5b4d731c00d9">
+      <ID>Business Line</ID>
+      <Name>Business Line</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="81e35542-d6dd-4a4e-a334-55f3fde2f90a">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a456c6e6-d79f-4408-b691-468c7f932406">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>BusinessLine</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6ca47910-03ae-42b6-a72a-cf5dd6807b34">
+      <ID>BU Group</ID>
+      <Name>BU Group</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="434e505e-3373-452d-a2d0-48e91c7e2751">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34f6d180-c850-4397-a930-381556da94b9">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>BUGroup</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="182d2003-33d7-4ea7-8670-b7e1a163b69d">
+      <ID>High Level Business Unit</ID>
+      <Name>High Level Business Unit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d0aa10b8-459c-4845-93ce-075f89b2a380">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2466ba38-cd4e-4b91-98b8-cbdc49d2a45c">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>HighLevelBusinessUnit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6d7b0052-4dc3-41e8-addc-24d62f505c35">
+      <ID>Center Flag</ID>
+      <Name>Center Flag</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="93b85e1e-dc3f-44f1-8401-3ce991119dee">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19d56ab0-42b2-42b1-bb4c-6605afbb704e">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>CenterFlag</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="577e29dd-01e9-443b-a90c-b5e1deabaab0">
+      <ID>BU Group Center Flag</ID>
+      <Name>BU Group Center Flag</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1c7050f3-e441-4011-85b9-c877c487529f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d7ef5ad-dd20-40f0-8255-a715b092c01d">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>BUGroupCenterFlag</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bb44ecae-640c-4791-95ec-65289fe0b3c7">
+      <ID>Business Type</ID>
+      <Name>Business Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d099eebf-bf92-44c4-b6cd-08ed2e025f33">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e413006-f403-4e0f-8b3c-204988508049">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>BusinessType</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="b9bda8ce-99af-4a1f-8e55-57038a80d1f2">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="6dfae37e-6024-44c7-83e4-411f7c1232b6">
+          <ID>Business Cluster</ID>
+          <Name>Business Cluster</Name>
+          <SourceAttributeID>Business Cluster</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ff3c9d26-5505-4342-9a77-fa52d98ae19a">
+          <ID>Business Group</ID>
+          <Name>Business Group</Name>
+          <SourceAttributeID>Business Group</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f2920004-e577-4bfe-9568-49b15cb2384f">
+          <ID>Business Line</ID>
+          <Name>Business Line</Name>
+          <SourceAttributeID>Business Line</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a1eb1642-fb70-43e7-81c2-7c3bc65aa63b">
+          <ID>BU Group</ID>
+          <Name>BU Group</Name>
+          <SourceAttributeID>BU Group</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="ed18fead-87ec-464d-a900-9224dc3dedcf">
+          <ID>High Level Business Unit</ID>
+          <Name>High Level Business Unit</Name>
+          <SourceAttributeID>High Level Business Unit</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="466cb230-9b0b-4560-b1ad-fe4ca944c838">
+          <ID>Business Unit</ID>
+          <Name>Business Unit</Name>
+          <SourceAttributeID>Business Unit</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
