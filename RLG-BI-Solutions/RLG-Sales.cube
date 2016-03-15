@@ -2036,10 +2036,16 @@
         <Attribute dwd:design-time-name="08982e74-6560-4881-bb07-5e3a2f898abe">
           <AttributeID>Date</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="64f7fed3-3ca8-4c61-807b-339d8d7aef32">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="ddda003e-2b8d-4608-be9c-57386cfea1ac">
           <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="fc98b4c8-539a-4273-9475-b31174029b8f">
+          <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -2620,10 +2626,16 @@
         <Attribute dwd:design-time-name="49fa9a1c-c929-4f94-8a1a-64bc9c9725f3">
           <AttributeID>Date</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="fe76698f-952a-45f8-aaa5-165239bef08c">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="5bfd3e3e-5515-44ed-ad45-3dfd1ef8f046">
           <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="2ea4b4b0-5ec8-40e2-ba91-d62f97171dba">
+          <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -2653,10 +2665,16 @@
         <Attribute dwd:design-time-name="b678c42a-a609-4d7d-9815-ef7bd55ad122">
           <AttributeID>Date</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="75f079c5-1262-4c68-8186-ebb049bd4b9c">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="3fa716cb-16d6-4c0e-976b-a25d84e8357b">
           <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="815e76a2-7c95-40ee-b0cd-d036aca45dce">
+          <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -2702,10 +2720,16 @@
         <Attribute dwd:design-time-name="09aea1dc-0a03-478e-b2ea-4fb213633ec3">
           <AttributeID>Date</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="6f456925-c30c-4b2d-893e-cb59db57692e">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="ac5d7b40-6444-4f74-88f5-fd36e4c11552">
           <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="53816dad-cfb6-4d26-a6a2-9e23ce3f6b1b">
+          <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -2735,10 +2759,16 @@
         <Attribute dwd:design-time-name="524535e7-2a76-4714-82d4-a2de83d9a074">
           <AttributeID>Date</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="b932f3de-1b8d-46f7-854a-170244bc64da">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="b2999381-bbb5-41a0-bf5e-14d5aa073c81">
           <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="227e0ed0-8a9d-4df6-891b-f7e56593a7c6">
+          <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -3275,7 +3305,6 @@
           </Attributes>
         </Dimension>
       </Dimensions>
-      <Partitions />
     </MeasureGroup>
   </MeasureGroups>
   <Source dwd:design-time-name="49d0ef7a-8538-4799-a717-1d7f825e2e80">

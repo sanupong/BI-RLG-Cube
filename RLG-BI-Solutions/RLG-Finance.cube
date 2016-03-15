@@ -756,10 +756,16 @@
         <Attribute dwd:design-time-name="29fd71c4-d9b9-4c76-9a82-432075779e3b">
           <AttributeID>Date</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="5f1305f3-f544-4d04-a8f6-912526c0b920">
+          <AttributeID>Month Number</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="c358aaff-3722-4cae-9274-1f12ef602946">
           <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="2e4c3d3d-20d7-4984-9f99-66b1e6013e22">
+          <HierarchyID>Hierarchy 1</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -1722,7 +1728,6 @@
           </Attributes>
         </Dimension>
       </Dimensions>
-      <Partitions />
     </MeasureGroup>
   </MeasureGroups>
   <Source dwd:design-time-name="f83c51fe-f903-4ca8-937b-2111e0961607">
