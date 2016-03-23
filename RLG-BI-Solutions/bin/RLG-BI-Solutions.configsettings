@@ -87,9 +87,6 @@
         <ID>Dim Territory</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Time</ID>
-      </Dimension>
-      <Dimension>
         <ID>Dim Invoice Type</ID>
       </Dimension>
       <Dimension>
@@ -122,16 +119,19 @@
       <Dimension>
         <ID>Dim Lay Out PL Contribution Margin</ID>
       </Dimension>
+      <Dimension>
+        <ID>Dim Time</ID>
+      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>RLG-BI-Solution</ID>
+        <ID>RLG-AccountReceivable</ID>
         <MeasureGroups>
           <MeasureGroup>
-            <ID>Sales Analysis</ID>
+            <ID>Fact AR</ID>
             <Partitions>
               <Partition>
-                <ID>Sales Analysis</ID>
+                <ID>Fact AR</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>
@@ -151,13 +151,13 @@
         </MeasureGroups>
       </Cube>
       <Cube>
-        <ID>RLG-AccountReceivable</ID>
+        <ID>RLG-BI-Solution</ID>
         <MeasureGroups>
           <MeasureGroup>
-            <ID>Fact AR</ID>
+            <ID>Sales Analysis</ID>
             <Partitions>
               <Partition>
-                <ID>Fact AR</ID>
+                <ID>Sales Analysis</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2559" scrolltop="-7329" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8969" y="16960" backcolor="16185078" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2559" scrolltop="-7329" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12647" y="16007" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimOverDuePeriod" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3810" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimOverDuePeriod" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3810" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="00080000e20e0000fe080000" />
             </control>
@@ -98,12 +98,20 @@
         <KeyColumn dwd:design-time-name="47109bd7-7cd4-4e6b-97ec-020d4de9fadd">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9461b94-3573-4851-a9b7-dd8783db18de">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="af70ca31-9d4c-4a18-b1e4-b66ebe02f273">
             <TableID>dbo_DimOverDuePeriod</TableID>
             <ColumnID>OverDuePeriodKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="5ee85c78-acdd-4297-870b-f24727ba23ff">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cca7b5cc-10bb-4cff-b2c5-a0284df7e2a7">
+          <TableID>dbo_DimOverDuePeriod</TableID>
+          <ColumnID>OverDuePeriod</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="540d7e91-538a-4ce7-8313-a09acc7cd4d9">
           <AttributeID>Over Due Period</AttributeID>
@@ -123,14 +131,29 @@
       <Name>Over Due Period</Name>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="3fd4861e-69a5-43a7-bc4b-f3dc5aacd3cf">
-          <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="497bfc82-dda5-41e7-b1aa-3bb438d0fcb5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba277222-5955-4c05-b000-3c6e72b69f0b">
             <TableID>dbo_DimOverDuePeriod</TableID>
-            <ColumnID>OverDuePeriod</ColumnID>
+            <ColumnID>OverDuePeriodKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="55bd2163-f77b-46c2-9917-cadb6adf52b7">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2af750e8-0cec-4576-a48b-c02068a87160">
+          <TableID>dbo_DimOverDuePeriod</TableID>
+          <ColumnID>OverDuePeriod</ColumnID>
+        </Source>
+      </NameColumn>
+      <ValueColumn dwd:design-time-name="eeafec4a-7ae2-45c2-a346-1ec1281912ba">
+        <DataType>WChar</DataType>
+        <DataSize>255</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3f170005-0309-4942-8366-558ac23c050a">
+          <TableID>dbo_DimOverDuePeriod</TableID>
+          <ColumnID>OverDuePeriod</ColumnID>
+        </Source>
+      </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>

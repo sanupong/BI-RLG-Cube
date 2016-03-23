@@ -828,6 +828,9 @@
         <Attribute dwd:design-time-name="95535b8e-9ae5-40d3-97b8-1e615be0849a">
           <AttributeID>Account Priority</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="89c82c4f-d5ed-46bc-957b-407bec6042a4">
+          <AttributeID>Customer No</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="adcb28c3-0175-444e-a6af-4528e30a1bd5">
@@ -1077,6 +1080,9 @@
         </Attribute>
         <Attribute dwd:design-time-name="78cceead-2e9c-4932-8379-dfa264c8cc58">
           <AttributeID>Company Segement Desc</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3d18e7fa-15b8-4efd-bc71-2c35c04084fe">
+          <AttributeID>Company Segment Name</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
@@ -1516,6 +1522,7 @@
           </Attributes>
         </Dimension>
       </Dimensions>
+      <Partitions />
     </MeasureGroup>
   </MeasureGroups>
   <Source dwd:design-time-name="a3241aa2-315c-4add-9377-5150d9af683c">

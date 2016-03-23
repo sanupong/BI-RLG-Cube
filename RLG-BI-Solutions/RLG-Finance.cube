@@ -895,6 +895,9 @@
         <Attribute dwd:design-time-name="b40e4e9b-2bef-4aa0-ba8b-1dbb5cd1fa26">
           <AttributeID>Company Segement Desc</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="d581b9c5-cd01-430a-bae3-bae8d89c2ece">
+          <AttributeID>Company Segment Name</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="9a7000f8-bfbf-40b2-971a-6498f789d9a6">
@@ -1728,6 +1731,7 @@
           </Attributes>
         </Dimension>
       </Dimensions>
+      <Partitions />
     </MeasureGroup>
   </MeasureGroups>
   <Source dwd:design-time-name="f83c51fe-f903-4ca8-937b-2111e0961607">
