@@ -26,7 +26,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>bcJYUxTNumkav7YPK6Q6TC42IE8=3/23/2016 8:14:57 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <TimeStamp>CG468Ua9aaHqRlBCD7+xYkEg3Ig=4/7/2016 11:49:04 AM10/22/2013 5:00:10 PM</TimeStamp>
         <ID>
           <String>RLG-BI-Solution</String>
         </ID>
@@ -61,7 +61,7 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>DlGll1U5+mn72bmrSBX4KVgdqKE=2/25/2016 9:50:58 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <TimeStamp>lyO031js7QD+CgimiYaXt9EKKEU=4/7/2016 11:50:26 AM10/22/2013 5:00:10 PM</TimeStamp>
         <ID>
           <String>Dim Business Cluster</String>
         </ID>
@@ -208,6 +208,13 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>iMGXtOz8Bzjm1LaSCkcEWPrLW9c=3/13/2016 2:52:25 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
         <TimeStamp>G5m8MMasc3ywUieIDZ0s2ve7AHI=10/6/2013 6:28:36 AM10/22/2013 5:00:10 PM</TimeStamp>
         <ID>
           <String>Dim Invoice Type</String>
@@ -284,36 +291,29 @@
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>iMGXtOz8Bzjm1LaSCkcEWPrLW9c=3/13/2016 2:52:25 PM10/22/2013 5:00:10 PM</TimeStamp>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>9no99s4qS6hqWibRWBgT6QM1Yv4=4/7/2016 11:50:26 AM10/22/2013 5:00:10 PMPa70b+dYmohSVtQfGAd1cvkOaH4=1/2/2014 9:33:56 AM10/22/2013 5:00:10 PM</TimeStamp>
         <ID>
-          <String>Dim Time</String>
+          <String>RLG-BI-Solution</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>TaJkebITIp6PtExVDXK3TWrSijA=3/23/2016 8:15:12 AM4/29/2014 5:02:27 PMaPsGH9BotbRLZsc46zkSk+lI7kM=4/29/2014 5:08:28 PM4/29/2014 5:02:27 PM</TimeStamp>
-        <ID>
-          <String>RLG-AccountReceivable</String>
-        </ID>
-      </ObjectSnapshot>
-      <ObjectSnapshot>
-        <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>hbKgScGJ1hKEEK/KrRYuu7+FeW8=3/23/2016 8:15:12 AM2/23/2014 9:39:51 PMsHkJ1ffrQeXZA9Yv4pEslSX+8LQ=2/23/2014 9:39:52 PM2/23/2014 9:39:51 PM</TimeStamp>
+        <TimeStamp>7mUGDfBkA5NWC7otjFBaOWLnEu4=4/7/2016 11:50:26 AM2/23/2014 9:39:51 PMsHkJ1ffrQeXZA9Yv4pEslSX+8LQ=2/23/2014 9:39:52 PM2/23/2014 9:39:51 PM</TimeStamp>
         <ID>
           <String>RLG-Finance</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>PSBCFGScWr5vAsKsnj+Iuk8c7T4=3/23/2016 8:15:12 AM10/22/2013 5:00:10 PMPa70b+dYmohSVtQfGAd1cvkOaH4=1/2/2014 9:33:56 AM10/22/2013 5:00:10 PM</TimeStamp>
+        <TimeStamp>A6u6HPXWQvsGNnyt2dFmGbhnOhU=4/7/2016 11:50:26 AM4/29/2014 5:02:27 PMaPsGH9BotbRLZsc46zkSk+lI7kM=4/29/2014 5:08:28 PM4/29/2014 5:02:27 PM</TimeStamp>
         <ID>
-          <String>RLG-BI-Solution</String>
+          <String>RLG-AccountReceivable</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Role</Type>
-        <TimeStamp>1XKPEsqX7sjYCHTnEyQjQA3suQc=1/2/2014 9:11:43 AM1/2/2014 9:10:53 AM</TimeStamp>
+        <TimeStamp>GDzRLhrHenv+CTHFMOqwdvN8oi4=3/31/2016 1:32:39 PM1/2/2014 9:10:53 AM</TimeStamp>
         <ID>
           <String>Role</String>
         </ID>
@@ -351,5 +351,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2016-03-23T05:32:37.456667Z</LastDeployed>
+  <LastDeployed>2016-04-07T04:50:34.186667Z</LastDeployed>
 </DeploymentSnapshot>

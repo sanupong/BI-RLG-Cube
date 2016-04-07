@@ -817,6 +817,21 @@
         <Attribute dwd:design-time-name="6c5b0696-fb1b-4362-9760-7bd88f7a9000">
           <AttributeID>Business Type</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="16d8feba-02d1-4711-9655-9e7173a535aa">
+          <AttributeID>Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="661f54f8-423c-48ba-870e-5d09bce48361">
+          <AttributeID>End Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="663d109e-b8d7-4651-b00c-da2a6694a99a">
+          <AttributeID>Start Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0fed1f3b-c8c1-4343-9311-34f9ef389b76">
+          <AttributeID>End Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dacbc0ea-eefa-4f8a-9e9b-9d494fe5877e">
+          <AttributeID>Version</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="4099122a-7bd1-40d2-8dc3-42c3d0b17332">

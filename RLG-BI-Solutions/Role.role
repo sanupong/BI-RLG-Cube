@@ -25,5 +25,8 @@
     <Member>
       <Name>Administrator</Name>
     </Member>
+    <Member>
+      <Name>AD-RLG\RLG-ETL</Name>
+    </Member>
   </Members>
 </Role>

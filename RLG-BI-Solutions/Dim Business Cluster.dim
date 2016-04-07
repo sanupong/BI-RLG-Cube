@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="514" scrolltop="-801" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11986" y="30771" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="514" scrolltop="-801" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12647" y="21246" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -157,6 +157,26 @@
         <AttributeRelationship dwd:design-time-name="9c7e28a0-7166-4495-a913-cc4c452f2fe2">
           <AttributeID>Business Type</AttributeID>
           <Name>Business Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f7748602-30a0-437e-a88c-ae400a6eb295">
+          <AttributeID>Start Date</AttributeID>
+          <Name>Start Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4f38bf3c-de41-4cec-94c6-97c0e1c1dda9">
+          <AttributeID>End Date</AttributeID>
+          <Name>End Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="36587423-21fc-407f-bd9f-82ee88ef4eda">
+          <AttributeID>Start Year</AttributeID>
+          <Name>Start Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="82165e39-3e75-45fe-9d6b-0e58b7869aed">
+          <AttributeID>End Year</AttributeID>
+          <Name>End Year</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3d63f5e6-50ef-4639-a519-71639b828f73">
+          <AttributeID>Version</AttributeID>
+          <Name>Version</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -317,6 +337,82 @@
         </KeyColumn>
       </KeyColumns>
       <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c73e3e9b-7655-4886-8fc6-c29d03a06533">
+      <ID>Start Date</ID>
+      <Name>Start Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="764fa314-75e8-47b7-9359-6981724c0e18">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94e15e34-312d-4feb-812a-658d7fa7f5b2">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>StartDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0a47a677-7d6f-45d6-a937-e6a81eac5476">
+      <ID>End Date</ID>
+      <Name>End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7ab3285-fc52-47d9-907a-5d686db3981b">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5ca55c8-ccb6-4d3d-b77c-d4c9f9501033">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>EndDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="845ca4de-3b58-4d75-ac70-29d22e73d312">
+      <ID>Start Year</ID>
+      <Name>Start Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29d8a85c-8ebe-4240-aacc-4905fda5dab6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b134500e-ce92-442f-a3d1-3fefdf08a293">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>StartYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0e05cda9-8387-400b-b757-402d4622e685">
+      <ID>End Year</ID>
+      <Name>End Year</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="33f5dd2b-6b83-4d84-ab13-53d6cd0318a3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4fc9c67-ff03-41bf-81ea-8ccda02affea">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>EndYear</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d12b2c2-fc39-4b8a-88fd-b69c971f9af9">
+      <ID>Version</ID>
+      <Name>Version</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="62866750-48d2-468f-80ed-afafaa511fea">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45c13af9-6c8f-48af-8e2f-88a6532a92f4">
+            <TableID>dbo_DimBusinessCluster</TableID>
+            <ColumnID>Version</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
