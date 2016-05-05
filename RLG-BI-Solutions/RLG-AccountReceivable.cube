@@ -939,8 +939,14 @@
         <Attribute dwd:design-time-name="fe9b7135-dda0-4fb5-b0a2-8a1c754d5184">
           <AttributeID>Affiliate Segment Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d7a162fa-4cfb-469f-aa42-d8932f647318">
-          <AttributeID>Parent Affiliate Segment Key</AttributeID>
+        <Attribute dwd:design-time-name="7f830770-e9bb-49eb-b947-580624e5d1bf">
+          <AttributeID>Affiliate Segment Alternate Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d4e19bfb-f4d6-4577-abe2-405b05ef372e">
+          <AttributeID>Affiliate Segment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe127cf6-7b56-44d6-bf4e-d29a094db5f1">
+          <AttributeID>Description</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>

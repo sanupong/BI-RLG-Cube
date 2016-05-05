@@ -477,7 +477,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2707" scrolltop="-6669" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9763" y="17039" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2707" scrolltop="-6669" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12647" y="21246" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -488,7 +488,7 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimAffiliateSegment" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5609" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimAffiliateSegment" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5609" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
                   <ddsxmlobjectstreaminitwrapper binary="00080000e915000088130000" />
                 </control>
@@ -498,27 +498,6 @@
                   </ddsxmlobj>
                 </layoutobject>
                 <shape groupshapeid="0" groupnode="0" />
-              </ddscontrol>
-              <ddscontrol controlprogid="MSDDS.Polyline" left="-1280" top="-1300" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="2754" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                <control>
-                  <ddsxmlobj>
-                    <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-                  </ddsxmlobj>
-                </control>
-                <layoutobject>
-                  <ddsxmlobj>
-                    <property name="LogicalObject" value="dataSet.Relations[DimAffiliateSegment-DimAffiliateSegment]" vartype="8" />
-                    <property name="Virtual" value="0" vartype="11" />
-                    <property name="VisibleAP" value="0" vartype="3" />
-                  </ddsxmlobj>
-                </layoutobject>
-                <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="1" sourceattachpoint="20" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                  <point x="20" y="850" />
-                  <point x="-980" y="850" />
-                  <point x="-980" y="-1000" />
-                  <point x="1174" y="-1000" />
-                  <point x="1174" y="0" />
-                </connector>
               </ddscontrol>
             </dds>
           </Value>
@@ -613,8 +592,16 @@
           </NameColumn>
           <AttributeRelationships>
             <AttributeRelationship>
-              <AttributeID>Parent Affiliate Segment Key</AttributeID>
-              <Name>Parent Affiliate Segment Key</Name>
+              <AttributeID>Affiliate Segment Alternate Key</AttributeID>
+              <Name>Affiliate Segment Alternate Key</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Affiliate Segment</AttributeID>
+              <Name>Affiliate Segment</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Description</AttributeID>
+              <Name>Description</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -631,19 +618,50 @@
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
         <Attribute>
-          <ID>Parent Affiliate Segment Key</ID>
-          <Name>Parent Affiliate Segment Key</Name>
-          <Usage>Parent</Usage>
+          <ID>Affiliate Segment Alternate Key</ID>
+          <Name>Affiliate Segment Alternate Key</Name>
           <KeyColumns>
             <KeyColumn>
-              <DataType>Integer</DataType>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
               <Source xsi:type="ColumnBinding">
                 <TableID>dbo_DimAffiliateSegment</TableID>
-                <ColumnID>ParentAffiliateSegmentKey</ColumnID>
+                <ColumnID>AffiliateSegmentAlternateKey</ColumnID>
               </Source>
             </KeyColumn>
           </KeyColumns>
-          <OrderBy>Key</OrderBy>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Affiliate Segment</ID>
+          <Name>Affiliate Segment</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimAffiliateSegment</TableID>
+                <ColumnID>AffiliateSegment</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Description</ID>
+          <Name>Description</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>255</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_DimAffiliateSegment</TableID>
+                <ColumnID>Description</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
@@ -6692,7 +6710,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="5" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5446" scrolltop="-12120" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12647" y="16007" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="5" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5446" scrolltop="-12120" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12647" y="21246" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -9230,7 +9248,13 @@
               <AttributeID>Affiliate Segment Key</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Parent Affiliate Segment Key</AttributeID>
+              <AttributeID>Affiliate Segment Alternate Key</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Affiliate Segment</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Description</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
@@ -10417,7 +10441,7 @@ CALCULATE; </Text>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="84" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12657" scrolltop="3669" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="31274" y="26088" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="84" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12657" scrolltop="3669" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="39846" y="30771" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -11301,7 +11325,13 @@ CALCULATE; </Text>
               <AttributeID>Affiliate Segment Key</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Parent Affiliate Segment Key</AttributeID>
+              <AttributeID>Affiliate Segment Alternate Key</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Affiliate Segment</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Description</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
@@ -13268,7 +13298,13 @@ VISIBLE = 1; </Text>
               <AttributeID>Affiliate Segment Key</AttributeID>
             </Attribute>
             <Attribute>
-              <AttributeID>Parent Affiliate Segment Key</AttributeID>
+              <AttributeID>Affiliate Segment Alternate Key</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Affiliate Segment</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Description</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
@@ -16435,27 +16471,6 @@ VISIBLE = 1  ; </Text>
                         <point x="24238" y="-686" />
                         <point x="26213" y="-686" />
                         <point x="26213" y="314" />
-                      </connector>
-                    </ddscontrol>
-                    <ddscontrol controlprogid="MSDDS.Polyline" left="22830" top="6104" logicalid="65" controlid="24" masterid="0" hint1="0" hint2="0" width="2641" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                      <control>
-                        <ddsxmlobj>
-                          <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-                        </ddsxmlobj>
-                      </control>
-                      <layoutobject>
-                        <ddsxmlobj>
-                          <property name="LogicalObject" value="dataSet.Relations[DimAffiliateSegment-DimAffiliateSegment]" vartype="8" />
-                          <property name="Virtual" value="0" vartype="11" />
-                          <property name="VisibleAP" value="0" vartype="3" />
-                        </ddsxmlobj>
-                      </layoutobject>
-                      <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="8" sourceattachpoint="24" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                        <point x="24130" y="8254" />
-                        <point x="23130" y="8254" />
-                        <point x="23130" y="6404" />
-                        <point x="25171" y="6404" />
-                        <point x="25171" y="7404" />
                       </connector>
                     </ddscontrol>
                     <ddscontrol controlprogid="MSDDS.Polyline" left="29927" top="6105" logicalid="66" controlid="25" masterid="0" hint1="0" hint2="0" width="2355" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
@@ -20933,7 +20948,6 @@ VISIBLE = 1  ; </Text>
               <msdata:Relationship name="FactSales-DimAccountSegment" msdata:parent="dbo_DimAccountSegment" msdata:child="dbo_FactSales" msdata:parentkey="AccountSegmentKey" msdata:childkey="AccountSegmentKey" msprop:IsLogical="True" msprop:Description="" />
               <msdata:Relationship name="DimProjectSegment-DimProjectSegment" msdata:parent="dbo_DimProjectSegment" msdata:child="dbo_DimProjectSegment" msdata:parentkey="ProjectSegmentKey" msdata:childkey="ParentProjectSegmentKey" msprop:IsLogical="True" msprop:Description="" />
               <msdata:Relationship name="DimFutureSegment-DimFutureSegment" msdata:parent="dbo_DimFutureSegment" msdata:child="dbo_DimFutureSegment" msdata:parentkey="FutureSegmentKey" msdata:childkey="ParentFutureSegmentKey" msprop:IsLogical="True" msprop:Description="" />
-              <msdata:Relationship name="DimAffiliateSegment-DimAffiliateSegment" msdata:parent="dbo_DimAffiliateSegment" msdata:child="dbo_DimAffiliateSegment" msdata:parentkey="AffiliateSegmentKey" msdata:childkey="ParentAffiliateSegmentKey" msprop:IsLogical="True" msprop:Description="" />
               <msdata:Relationship name="DimDepartmentSegment-DimDepartmentSegment" msdata:parent="dbo_DimDepartmentSegment" msdata:child="dbo_DimDepartmentSegment" msdata:parentkey="DepartmentSegmentKey" msdata:childkey="ParentDepartmentSegmentKey" msprop:IsLogical="True" msprop:Description="" />
               <msdata:Relationship name="DimAccountSegment-DimAccountSegment" msdata:parent="dbo_DimAccountSegment" msdata:child="dbo_DimAccountSegment" msdata:parentkey="AccountSegmentKey" msdata:childkey="ParentAccountSegmentKey" msprop:IsLogical="True" msprop:Description="" />
               <msdata:Relationship name="DimBusinessUnitSegment-DimBusinessUnitSegment" msdata:parent="dbo_DimBusinessUnitSegment" msdata:child="dbo_DimBusinessUnitSegment" msdata:parentkey="BusinessUnitSegmentKey" msdata:childkey="ParentBusinessUnitSegmentKey" msprop:IsLogical="True" msprop:Description="" />

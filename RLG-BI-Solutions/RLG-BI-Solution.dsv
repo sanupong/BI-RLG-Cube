@@ -2486,27 +2486,6 @@
                     <point x="26213" y="314" />
                   </connector>
                 </ddscontrol>
-                <ddscontrol controlprogid="MSDDS.Polyline" left="22830" top="6104" logicalid="65" controlid="24" masterid="0" hint1="0" hint2="0" width="2641" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
-                  <control>
-                    <ddsxmlobj>
-                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
-                    </ddsxmlobj>
-                  </control>
-                  <layoutobject>
-                    <ddsxmlobj>
-                      <property name="LogicalObject" value="dataSet.Relations[DimAffiliateSegment-DimAffiliateSegment]" vartype="8" />
-                      <property name="Virtual" value="0" vartype="11" />
-                      <property name="VisibleAP" value="0" vartype="3" />
-                    </ddsxmlobj>
-                  </layoutobject>
-                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="8" sourceattachpoint="24" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-                    <point x="24130" y="8254" />
-                    <point x="23130" y="8254" />
-                    <point x="23130" y="6404" />
-                    <point x="25171" y="6404" />
-                    <point x="25171" y="7404" />
-                  </connector>
-                </ddscontrol>
                 <ddscontrol controlprogid="MSDDS.Polyline" left="29927" top="6105" logicalid="66" controlid="25" masterid="0" hint1="0" hint2="0" width="2355" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                   <control>
                     <ddsxmlobj>
@@ -6982,7 +6961,6 @@
           <msdata:Relationship name="FactSales-DimAccountSegment" msdata:parent="dbo_DimAccountSegment" msdata:child="dbo_FactSales" msdata:parentkey="AccountSegmentKey" msdata:childkey="AccountSegmentKey" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="DimProjectSegment-DimProjectSegment" msdata:parent="dbo_DimProjectSegment" msdata:child="dbo_DimProjectSegment" msdata:parentkey="ProjectSegmentKey" msdata:childkey="ParentProjectSegmentKey" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="DimFutureSegment-DimFutureSegment" msdata:parent="dbo_DimFutureSegment" msdata:child="dbo_DimFutureSegment" msdata:parentkey="FutureSegmentKey" msdata:childkey="ParentFutureSegmentKey" msprop:IsLogical="True" msprop:Description="" />
-          <msdata:Relationship name="DimAffiliateSegment-DimAffiliateSegment" msdata:parent="dbo_DimAffiliateSegment" msdata:child="dbo_DimAffiliateSegment" msdata:parentkey="AffiliateSegmentKey" msdata:childkey="ParentAffiliateSegmentKey" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="DimDepartmentSegment-DimDepartmentSegment" msdata:parent="dbo_DimDepartmentSegment" msdata:child="dbo_DimDepartmentSegment" msdata:parentkey="DepartmentSegmentKey" msdata:childkey="ParentDepartmentSegmentKey" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="DimAccountSegment-DimAccountSegment" msdata:parent="dbo_DimAccountSegment" msdata:child="dbo_DimAccountSegment" msdata:parentkey="AccountSegmentKey" msdata:childkey="ParentAccountSegmentKey" msprop:IsLogical="True" msprop:Description="" />
           <msdata:Relationship name="DimBusinessUnitSegment-DimBusinessUnitSegment" msdata:parent="dbo_DimBusinessUnitSegment" msdata:child="dbo_DimBusinessUnitSegment" msdata:parentkey="BusinessUnitSegmentKey" msdata:childkey="ParentBusinessUnitSegmentKey" msprop:IsLogical="True" msprop:Description="" />
