@@ -2049,24 +2049,6 @@
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="b200539d-4ee6-470b-821f-b697c52ef910">
-      <ID>Dim Scenario</ID>
-      <Name>Dim Scenario</Name>
-      <DimensionID>Dim Scenario</DimensionID>
-      <Attributes>
-        <Attribute dwd:design-time-name="145a9c19-8455-4ba1-b3b0-b6c4b086f9cc">
-          <AttributeID>Scenario Key</AttributeID>
-        </Attribute>
-        <Attribute dwd:design-time-name="5ec9c664-dff8-400f-afd5-dd41044f83c7">
-          <AttributeID>Scenario Name</AttributeID>
-        </Attribute>
-      </Attributes>
-      <Hierarchies>
-        <Hierarchy dwd:design-time-name="ef58be4c-e3ac-4e8f-83b2-2381d2ebca8c">
-          <HierarchyID>Hierarchy</HierarchyID>
-        </Hierarchy>
-      </Hierarchies>
-    </Dimension>
     <Dimension dwd:design-time-name="e2826f06-751b-45d6-8ead-8a3fcc195e74">
       <ID>Dim Account</ID>
       <Name>Dim Account</Name>
@@ -2619,10 +2601,10 @@
       <Name>Dim Invoice Type</Name>
       <DimensionID>Dim Invoice Type</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="a139bec7-4949-4875-82e2-4a13c8bc758a">
+        <Attribute dwd:design-time-name="fc3460a0-6fad-4a80-962b-ab894fc80a09">
           <AttributeID>Invoice Type Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7a4a41fa-33ba-4f9e-88ce-0b2feb740afd">
+        <Attribute dwd:design-time-name="d3f5516a-f1d2-4f85-bea7-37d9168c30af">
           <AttributeID>Invoice Type</AttributeID>
         </Attribute>
       </Attributes>
@@ -2925,25 +2907,6 @@
                   <Source xsi:type="ColumnBinding" dwd:design-time-name="85818d2e-84de-45e8-a7fd-e8f8927149d5">
                     <TableID>dbo_FactSales</TableID>
                     <ColumnID>TerritoryKey</ColumnID>
-                  </Source>
-                </KeyColumn>
-              </KeyColumns>
-              <Type>Granularity</Type>
-            </Attribute>
-          </Attributes>
-        </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="db86e5a6-1057-476d-bcaf-05c489a55be9">
-          <CubeDimensionID>Dim Scenario</CubeDimensionID>
-          <Attributes>
-            <Attribute dwd:design-time-name="3df34441-ee91-4ef7-8066-e7524ce2546c">
-              <AttributeID>Scenario Key</AttributeID>
-              <KeyColumns>
-                <KeyColumn dwd:design-time-name="08ea3858-ce3c-44d1-b4b2-b2096d5a770e">
-                  <DataType>Integer</DataType>
-                  <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bbfcc7a4-5f11-4857-9979-78a52d8d2ee4">
-                    <TableID>dbo_FactSales</TableID>
-                    <ColumnID>ScenarioKey</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>

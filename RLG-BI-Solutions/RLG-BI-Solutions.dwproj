@@ -132,10 +132,6 @@
       <FullPath>Dim Salesperson.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Dim Scenario.dim</Name>
-      <FullPath>Dim Scenario.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Dim Territory.dim</Name>
       <FullPath>Dim Territory.dim</FullPath>
     </ProjectItem>
@@ -186,6 +182,10 @@
     <ProjectItem>
       <Name>Dim Lay Out PL Contribution Margin.dim</Name>
       <FullPath>Dim Lay Out PL Contribution Margin.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Scenario.dim</Name>
+      <FullPath>Dim Scenario.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

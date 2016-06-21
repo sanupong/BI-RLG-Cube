@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2837" scrolltop="-7541" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8969" y="16960" backcolor="16185078" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2837" scrolltop="-7541" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="11959" y="30771" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimInvoiceType" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3254" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="DimInvoiceType" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3254" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="00080000b60c000057070000" />
             </control>
@@ -71,6 +71,7 @@
   <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b99fb08f-7a09-4db2-8b26-43cfd1120f71">
     <DataSourceViewID>RLG-BI-Solution</DataSourceViewID>
   </Source>
+  <UnknownMember>Hidden</UnknownMember>
   <ErrorConfiguration dwd:design-time-name="772e2531-ab8f-43d3-9d0b-14a6f887fefb">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
@@ -78,36 +79,21 @@
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="9604f033-1e16-4b14-a1ad-2d2e881521e4">
+    <Attribute dwd:design-time-name="9aa8122d-e8c4-4edf-8ce9-9df3038fbb91">
       <ID>Invoice Type Key</ID>
       <Name>Invoice Type Key</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="39bad182-5696-4d0b-af36-e6eb63135111">
+        <KeyColumn dwd:design-time-name="70396227-4b41-479c-8f58-7d0895e250d7">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee05229c-ecbe-4820-a990-d77cdf2f2e14">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d31365fa-da66-45f4-a391-ce653315c650">
             <TableID>dbo_DimInvoiceType</TableID>
             <ColumnID>InvoiceTypeKey</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="ed51718f-8821-4d0f-9670-8c064050d868">
-          <DataType>WChar</DataType>
-          <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4576c1a-5e48-482b-b685-d82070dc8c6e">
-            <TableID>dbo_DimInvoiceType</TableID>
-            <ColumnID>InvoiceType</ColumnID>
-          </Source>
-        </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="04ac58f1-e8bc-431a-9ff2-2f7d7a43b6d3">
-        <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0f0eb8de-c42a-4d9e-bf97-cbcaefb1da70">
-          <TableID>dbo_DimInvoiceType</TableID>
-          <ColumnID>InvoiceTypeKey</ColumnID>
-        </Source>
-      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="73a9c0ad-91b7-4d2f-80bf-e9ad0a05dada">
+        <AttributeRelationship dwd:design-time-name="d48775cd-4015-4b7e-bdc0-f5042db77b74">
           <AttributeID>Invoice Type</AttributeID>
           <Name>Invoice Type</Name>
         </AttributeRelationship>
@@ -115,14 +101,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8a9647e1-9e2b-43fc-befa-86ea87683e3d">
+    <Attribute dwd:design-time-name="7ba4d114-58be-4492-8b5f-620dcc2b1ccb">
       <ID>Invoice Type</ID>
       <Name>Invoice Type</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ca85ebee-023c-4106-a67b-fab3607bc8e7">
+        <KeyColumn dwd:design-time-name="19bf3c71-b421-444a-9e77-87298e3a9f05">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d659e78c-8e12-4120-aa85-8db470d0e8cb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d9265f05-8cf5-4510-858f-63d8601e033e">
             <TableID>dbo_DimInvoiceType</TableID>
             <ColumnID>InvoiceType</ColumnID>
           </Source>
