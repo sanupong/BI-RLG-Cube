@@ -138,19 +138,6 @@
         </MeasureGroups>
       </Cube>
       <Cube>
-        <ID>RLG-AccountReceivable</ID>
-        <MeasureGroups>
-          <MeasureGroup>
-            <ID>Fact AR</ID>
-            <Partitions>
-              <Partition>
-                <ID>Fact AR</ID>
-              </Partition>
-            </Partitions>
-          </MeasureGroup>
-        </MeasureGroups>
-      </Cube>
-      <Cube>
         <ID>RLG-Finance</ID>
         <MeasureGroups>
           <MeasureGroup>
@@ -158,6 +145,19 @@
             <Partitions>
               <Partition>
                 <ID>Finance Analysis</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>RLG-AccountReceivable</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact AR</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact AR</ID>
               </Partition>
             </Partitions>
           </MeasureGroup>

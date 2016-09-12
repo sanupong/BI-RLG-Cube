@@ -2119,7 +2119,7 @@
             <Name>Finance</Name>
             <DiagramLayout>
               <dds>
-                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="82" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="3382" scrolltop="1780" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="28945" y="22569" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="82" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="3382" scrolltop="1780" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="37571" y="22569" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                   <font>
                     <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                   </font>
@@ -3782,7 +3782,7 @@
                   </connector>
                 </ddscontrol>
               </dds>
-</DiagramLayout>
+            </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
             <DiagramViewPortLeft>-12574</DiagramViewPortLeft>
@@ -4448,7 +4448,7 @@
                   </connector>
                 </ddscontrol>
               </dds>
-</DiagramLayout>
+            </DiagramLayout>
             <ShowRelationshipNames>False</ShowRelationshipNames>
             <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
             <DiagramViewPortLeft>-802</DiagramViewPortLeft>
@@ -5417,6 +5417,13 @@
                   <xs:element name="EndDate" msprop:design-time-name="bb093a18-4799-470a-bfcb-0174f56b9c8f" msprop:DbColumnName="EndDate" msprop:FriendlyName="EndDate" type="xs:dateTime" minOccurs="0" />
                   <xs:element name="AuditKey" msprop:design-time-name="b03320a7-3f32-4e09-93f4-a4ad77a512a8" msprop:DbColumnName="AuditKey" msprop:FriendlyName="AuditKey" type="xs:int" minOccurs="0" />
                   <xs:element name="UpdateDate" msprop:design-time-name="f5215171-4dc1-4e6c-8bda-ae6dae88890e" msprop:DbColumnName="UpdateDate" msprop:FriendlyName="UpdateDate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="DateStr2" msprop:design-time-name="2e265c19-ac27-4409-b5f5-a1a68c5a725c" msprop:DbColumnName="DateStr2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -5474,7 +5481,9 @@
                   <xs:element name="ScenarioKey" msprop:design-time-name="46c1c8fc-d3dc-473a-8083-6c3296495ba2" msprop:DbColumnName="ScenarioKey" type="xs:int" minOccurs="0" />
                   <xs:element name="ScenarioYearKey" msprop:design-time-name="533beb2c-f5b1-4f92-a364-b187652127c5" msprop:DbColumnName="ScenarioYearKey" type="xs:int" minOccurs="0" />
                   <xs:element name="ForecastScenarioKey" msprop:design-time-name="a77f3325-5de7-40b7-a9ae-4144ba83b481" msprop:DbColumnName="ForecastScenarioKey" type="xs:int" minOccurs="0" />
-                  <xs:element name="Bigin_x0020_Balance_x0020_Amount" msprop:DbColumnName="Bigin Balance Amount" msprop:design-time-name="9cdb86a4-44f9-4eed-8cee-692233efbbe4" type="xs:double" minOccurs="0" />
+                  <xs:element name="Bigin_x0020_Balance_x0020_Amount" msprop:design-time-name="9cdb86a4-44f9-4eed-8cee-692233efbbe4" msprop:DbColumnName="Bigin Balance Amount" type="xs:double" minOccurs="0" />
+                  <xs:element name="GL_Balance_Amount" msprop:DbColumnName="GL_Balance_Amount" msprop:design-time-name="3417c6e8-d04e-4634-94bf-da0e84706a8a" type="xs:double" minOccurs="0" />
+                  <xs:element name="GL_Balance_Source" msprop:DbColumnName="GL_Balance_Source" msprop:design-time-name="f6777b84-fc51-4f94-95e5-7542d5e5c8ac" type="xs:boolean" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>

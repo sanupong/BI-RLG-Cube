@@ -2039,6 +2039,9 @@
         <Attribute dwd:design-time-name="64f7fed3-3ca8-4c61-807b-339d8d7aef32">
           <AttributeID>Month Number</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="3f372455-6173-47f3-bca8-382d85aa8f14">
+          <AttributeID>Date Str2</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="ddda003e-2b8d-4608-be9c-57386cfea1ac">
@@ -2638,6 +2641,9 @@
         <Attribute dwd:design-time-name="fe76698f-952a-45f8-aaa5-165239bef08c">
           <AttributeID>Month Number</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="23dfc2df-db1c-463b-8b14-171e3255c99c">
+          <AttributeID>Date Str2</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="5bfd3e3e-5515-44ed-ad45-3dfd1ef8f046">
@@ -2676,6 +2682,9 @@
         </Attribute>
         <Attribute dwd:design-time-name="75f079c5-1262-4c68-8186-ebb049bd4b9c">
           <AttributeID>Month Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="467dd425-7d34-48d3-abb6-22e2f2a2a03d">
+          <AttributeID>Date Str2</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
@@ -2732,6 +2741,9 @@
         <Attribute dwd:design-time-name="6f456925-c30c-4b2d-893e-cb59db57692e">
           <AttributeID>Month Number</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="f001682a-7605-4705-90e8-47a38fad280c">
+          <AttributeID>Date Str2</AttributeID>
+        </Attribute>
       </Attributes>
       <Hierarchies>
         <Hierarchy dwd:design-time-name="ac5d7b40-6444-4f74-88f5-fd36e4c11552">
@@ -2770,6 +2782,9 @@
         </Attribute>
         <Attribute dwd:design-time-name="b932f3de-1b8d-46f7-854a-170244bc64da">
           <AttributeID>Month Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f3b750f2-cc29-4f8e-8943-deee61379a55">
+          <AttributeID>Date Str2</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
