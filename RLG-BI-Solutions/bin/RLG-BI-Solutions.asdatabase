@@ -10459,7 +10459,7 @@ CALCULATE; </Text>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="82" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4437" scrolltop="9196" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="33496" y="21246" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="82" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4437" scrolltop="9196" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="28760" y="21246" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -12263,11 +12263,11 @@ The CALCULATE command controls the aggregation of leaf cells in the cube.
 If the CALCULATE command is deleted or modified, the data within the cube is affected.
 You should edit this command only if you manually specify how the cube is aggregated.
 */
-CALCULATE;  
+CALCULATE;    
 CREATE MEMBER CURRENTCUBE.[Measures].[ActualWithBegin]
  AS [Measures].[Actual Amount] + [Measures].[Bigin Balance Amount], 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Finance Analysis';        
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Finance Analysis';          
 CREATE MEMBER CURRENTCUBE.[Measures].[YTD_Actual_Amount]
  AS SUM
 (
@@ -12275,127 +12275,127 @@ YTD([Dim Time].[Hierarchy]),
 [Measures].[Actual Amount]
 ), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;       
+VISIBLE = 1;         
 CREATE MEMBER CURRENTCUBE.[Measures].[Beginning Actual Amount]
  AS iif([Dim Time].[Hierarchy].Prevmember IS NULL, ([Measures].[Beginning Actual Amount]),
  
 ([Dim Time].[Hierarchy].Prevmember, [Measures].[Actual Amount])), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Finance Analysis'  ;       
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Finance Analysis';         
 CREATE MEMBER CURRENTCUBE.[Measures].[Ending Actual Amount]
  AS ([Measures].[Beginning Actual Amount])+[Measures].[Actual Amount], 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Finance Analysis'  ;            
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Finance Analysis';              
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนสภาพคล่อง]
- AS ([Dim Account].[Parent Account Key].&amp;[4],[Measures].[Actual Amount]) / 
-([Dim Account].[Parent Account Key].&amp;[180],[Measures].[Actual Amount]), 
+ AS ([Dim Lay Out PL Standard].[Parent Account Key].&amp;[3],[Measures].[Actual Amount]) / 
+([Dim Lay Out PL Standard].[Parent Account Key].&amp;[152],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;             
+VISIBLE = 1;               
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนเงินทุนหมุนเร็ว]
  AS (([Dim Account].[Parent Account Key].&amp;[4],[Measures].[Actual Amount])-
 ([Dim Account].[Parent Account Key].&amp;[91],[Measures].[Actual Amount])) / 
 ([Dim Account].[Parent Account Key].&amp;[180],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;             
+VISIBLE = 1;               
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราการหมุนของสินทรัพย์รวม]
  AS ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount]) / 
 ([Dim Account].[Parent Account Key].&amp;[3],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;          
+VISIBLE = 1;            
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราการหมุนของสินทรัพย์ถาวร]
  AS ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;             
+VISIBLE = 1;               
 CREATE MEMBER CURRENTCUBE.[Measures].[ระยะเวลาเก็บหนี้]
  AS ([Dim Account].[Parent Account Key].&amp;[55],[Measures].[Actual Amount]) / 
 ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount])*365, 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;             
+VISIBLE = 1;               
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนหมุนเวียนลูกหนี้การค้า]
  AS ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[55],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;            
+VISIBLE = 1;              
 CREATE MEMBER CURRENTCUBE.[Measures].[ระยะเวลาขายสินค้าเฉลี่ย]
  AS ([Dim Account].[Parent Account Key].&amp;[325],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[91],[Measures].[Actual Amount])*365, 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;            
+VISIBLE = 1;              
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนหมุนเวียนสินค้าคงเหลือ]
  AS ([Dim Account].[Parent Account Key].&amp;[91],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[325],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;            
+VISIBLE = 1;              
 CREATE MEMBER CURRENTCUBE.[Measures].[ระยะเวลาชำระหนี้เฉลี่ย]
  AS ([Dim Account].[Parent Account Key].&amp;[181],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[325],[Measures].[Actual Amount])*365, 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;            
+VISIBLE = 1;              
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนหมุนเวียนเจ้าหนี้]
  AS ([Dim Account].[Parent Account Key].&amp;[325],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[181],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;            
+VISIBLE = 1;              
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตรากำไรขั้นต้น]
  AS ((([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount])-
 ([Dim Account].[Parent Account Key].&amp;[325],[Measures].[Actual Amount]))/
 ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount]))*100, 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;         
+VISIBLE = 1;           
 CREATE MEMBER CURRENTCUBE.[Measures].[กำไรขั้นต้น]
  AS ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount])-
 ([Dim Account].[Parent Account Key].&amp;[325],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตรากำไรสุทธิ]
  AS ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราผลตอบแทนจากสินทรัพย์]
  AS ([Dim Account].[Parent Account Key].&amp;[3],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราผลตอบแทนจากสินทรัพย์ถาวร]
  AS ([Dim Account].[Parent Account Key].&amp;[3],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราผลตอบแทนผู้ถือหุ้น]
  AS ([Dim Account].[Parent Account Key].&amp;[246],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตรากำไรก่อนหักภาษี/สินทรัพย์ทั้งหมด]
  AS ([Dim Account].[Parent Account Key].&amp;[3],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนหนี้สินรวมต่อสินทรัพย์รวม]
  AS ([Dim Account].[Parent Account Key].&amp;[179],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[3],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนหนี้สินต่อส่วนของผู้ถือหุ้น]
  AS ([Dim Account].[Parent Account Key].&amp;[179],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[246],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนของทุนจดทะเบียน/สินทรัพย์รวม]
  AS (([Dim Account].[Parent Account Key].&amp;[247],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[3],[Measures].[Actual Amount]))*100, 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนของผู้ถือหุ้นต่อสินทรัพย์รวม]
  AS (([Dim Account].[Parent Account Key].&amp;[246],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[3],[Measures].[Actual Amount]))*100, 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนความสามารถชำระดอกเบี้ย]
  AS ([Dim Account].[Parent Account Key].&amp;[623],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราส่วนหนี้สินระยะยาวต่อสินทรัพย์รวม]
  AS (([Dim Account].[Parent Account Key].&amp;[238],[Measures].[Actual Amount])/
 ([Dim Account].[Parent Account Key].&amp;[3],[Measures].[Actual Amount]))*100, 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;           
+VISIBLE = 1;             
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราการเพิ่มของรายได้รวม]
  AS ((([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount])-
 ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount],
@@ -12403,15 +12403,31 @@ PARALLELPERIOD([Dim Time].[Calendar].[Year],1,[Dim Time].[Calendar].CURRENTMEMBE
 ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount],
 PARALLELPERIOD([Dim Time].[Calendar].[Year],1,[Dim Time].[Calendar].CURRENTMEMBER)))*100, 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;          
+VISIBLE = 1;            
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราการเพิ่มของยอดขาย]
  AS ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;          
+VISIBLE = 1;            
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราเพิ่มของกำไรสุทธิ]
  AS ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
-VISIBLE = 1;          
+VISIBLE = 1; 
+CREATE MEMBER CURRENTCUBE.[Measures].PrevActAmount
+ AS ([Dim Time].[Year].PrevMember,[Measures].[Actual Amount]), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].PrevX2ActAmount
+ AS ([Dim Time].[Year].PrevMember.PrevMember,[Measures].[Actual Amount]), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].PrevX3ActAmount
+ AS ([Dim Time].[Year].PrevMember.PrevMember.PrevMember,[Measures].[Actual Amount]), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1  ; 
+CREATE MEMBER CURRENTCUBE.[Measures].PrevX4ActAmount
+ AS ([Dim Time].[Year].PrevMember.PrevMember.PrevMember.PrevMember,[Measures].[Actual Amount]), 
+FORMAT_STRING = "#,##0.00;-#,##0.00", 
+VISIBLE = 1  ;            
 CREATE MEMBER CURRENTCUBE.[Measures].[อัตราเพิ่มของสินทรัพย์รวม]
  AS ([Dim Account].[Parent Account Key].&amp;[258],[Measures].[Actual Amount]), 
 FORMAT_STRING = "#,##0.00;-#,##0.00", 
@@ -16847,7 +16863,7 @@ VISIBLE = 1; </Text>
                       </connector>
                     </ddscontrol>
                   </dds>
-</DiagramLayout>
+                </DiagramLayout>
                 <ShowRelationshipNames>False</ShowRelationshipNames>
                 <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
                 <DiagramViewPortLeft>3382</DiagramViewPortLeft>
